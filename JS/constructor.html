@@ -14,8 +14,27 @@
             food ;
             lang ;
 
-            constructor(sName , sFood,)
+            constructor(sName , sFood, sLang){
+                this.name = sName;
+                this.food = sFood;
+                this.lang = sLang;
+            }
+            eat(){
+                return this.name + " can eat " + this.food;
+            }
+            speak(){
+                return this.name + " can speak " + this.lang;
+            }           
         }
+        let std1 = new Human('Ali','Biryani','English');
+        console.log(std1.eat());
+        console.log(std1.speak());
+        let std2 = new Human('Hamza','Burger','Urdu');
+        console.log(std2.eat());
+        console.log(std2.speak());
+        let std3 = new Human('Hassan','Noodles','Pashto');
+        console.log(std3.eat());
+        console.log(std3.speak());
     </script>
 </body>
 </html>
