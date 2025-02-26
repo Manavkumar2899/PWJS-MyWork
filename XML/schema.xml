@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="schema.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<aptech>
+<employee>
+<id>1</id>
+<name>Ali Khan</name>
+<email></email>
+<city>karachi</city>
+</employee>
+<students>
+<id>1</id>
+<faculty></faculty>
+<course></course>
+</students>
+<management>
+</management>
+</aptech>
