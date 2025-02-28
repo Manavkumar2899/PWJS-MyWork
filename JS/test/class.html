@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+    class Car{
+        // Name ;
+        // Model ;
+        // Year ;
+
+        constructor(sName,sModel,sYear){
+            this.name = sName;
+            this.model = sModel;
+            this.year = sYear;
+        }
+
+        displayInfo(){
+            return this.name + " is a model of " + this.model + " and it was made in " + this.year;
+        }
+        updateYear(newYear){ 
+            return this.name + " was CREATED in " + this.year   + " AND NOW updated in " +   newYear ;               
+        }
+        startEngine(){
+            return this.name + " engine is started"
+        }
+    }
+
+    let car1 = new Car('Honda Civic','2020 GT ','2022');
+    console.log(car1.displayInfo());
+    console.log(car1.updateYear(2025));
+    console.log(car1.startEngine());
+
+    let car2 = new Car('Toyota Fortuner','2010 ','2015');
+    console.log(car2.displayInfo());
+    console.log(car2.updateYear(2024));
+    console.log(car2.startEngine());
+
+    let car3 = new Car('Suzuki Swift','2015 VXR','2018');
+    console.log(car3.displayInfo());
+    console.log(car3.updateYear(2025));
+    console.log(car3.startEngine());
+
+    // let car4 = new Car('Hyundai Elentra','2023 Hybrid','2024');
+    // console.log(car4.displayInfo());
+    // console.log(car4.updateYear(2024));
+    // console.log(car4.startEngine());
+
+    // let car5 = new Car('Toyota Altis','2018','2020');
+    // console.log(car5.displayInfo());
+    // console.log(car5.updateYear(2025));
+    // console.log(car5.startEngine());
+
+</script>
+
+
+</body>
+</html>
